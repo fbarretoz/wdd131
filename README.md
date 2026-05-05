@@ -1,2 +1,2 @@
 # wdd131
-WDD 131 - BYU-Idaho
+WDD 131 - BYU-Idaho - Barreto
