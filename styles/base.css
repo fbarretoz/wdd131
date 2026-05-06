@@ -19,8 +19,6 @@ main {
 header,
 footer {
     background-color: rgb(21, 66, 96);
-    /* grid-column: 1 / 4; */
-
 }
 
 #course-title {
