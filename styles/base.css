@@ -18,6 +18,7 @@ main {
 
 header {
     background-color: #154250;
+    color: #FFFFFF;
 }
 
 #course-title {
@@ -33,6 +34,7 @@ footer {
     background-color: #154260;
     margin-top: 1rem;
     padding: 1rem;
+    color: #FFFFFF;
 }
 
 footer p {
@@ -52,6 +54,7 @@ footer p.date {
     flex-wrap: wrap;
     background-color: #000000;
     align-items: center;
+    color: #FFFFFF;
 }
 
 .navigation li {
