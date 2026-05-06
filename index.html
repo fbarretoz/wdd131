@@ -2,13 +2,106 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Félix Barreto</title>
+    <meta name="description"
+        content="Page designed as a 'WDD 131 - Dynamic Web Fundamentals' course requirement, containing personal data on Félix José Barreto Zerpa as well as information about Venezuela, applying concepts of HTML, CSS, and JavaScript">
+    <meta name="author" content="Félix José Barreto Zerpa">
+
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - FELIX BARRETO</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/fbarretoz" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="I-Learn">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng&id=p1#p1"
+                        title="Book o Moromon">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Félix José Barreto Zerpa</h1>
+        <div id="about" class="card">
+            <h2>About me</h2>
+            <div class="inside">
+                <div class="left-inside">
+                    <p>My name is Félix Barreto, I am 56 years old, and I am from Venezuela. I live in a small town
+                        called
+                        Valle
+                        de la Pascua,
+                        which belongs to the state of Guárico, in the central part of the country, in the Venezuelan
+                        plains.
+                        The
+                        main economic
+                        activities in the area are agriculture and cattle ranching. Currently, my brother and I work on
+                        our
+                        farm
+                        where we raise
+                        dairy cows and grow corn. My favorite hobby when I'm relaxing at home is playing chess and
+                        watching
+                        biopic.</p>
+                    <div class="section-title">
+                        <h3>Venezuela</h3>
+                        <hr>
+                    </div>
+                    <div class="flag">
+                        <img class="venezuela" src="images/bandera-venezuela.webp" alt="Venezuela flag">
+                        <h4>Oficial Flag of Venezuela</h4>
+                    </div>
+
+                    <div>
+                        <p>Venezuela is a beautiful country with the world's largest oil reserves. It boasts a wide
+                            variety of
+                            tourist sites with
+                            diverse climates, among the most outstanding being Angel Falls, the world's tallest
+                            waterfall; the
+                            Guiana Shield with
+                            its Tepuis, one of the oldest mountain formations on the planet; and the plains, mountains,
+                            and
+                            beautiful beaches along
+                            its northern Caribbean coast.</p>
+                    </div>
+                </div>
+
+                <div class="right-inside">
+                    <img class="history" src="images/personal.webp" alt="Félix Barreto picture">
+                </div>
+
+            </div>
+        </div>
+        <div id="resource" class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">Css Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholde</a></li>
+            </ul>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> - Félix José Barreto Zerpa - Venezuela</p>
+        <p class="date"><span id="lastModified"></span></p>
+    </footer>
+
 </body>
 
 </html>
