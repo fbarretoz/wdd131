@@ -1,13 +1,31 @@
+// select elements from the DOM
 const list = document.querySelector('ul');
-const items = document.querySelector('#favchap');
+const items = document.querySelector("#favchap");
 const btnInput = document.querySelector('button');
 
-const listItem = document.querySelector('li');
-const btnDelete = document.querySelector('button');
 
-listItem.textContent = items.value;
-btnDelete.textContent = '❌';
-btnDelete.setAttribute("aria-label", "Delete");
+btnInput.addEventListener('click', function (e) {
 
-listItem.append(btnDelete);
-list.append(listItem);
+    e.preventDefault();
+
+    if (items.value.trim() !== '') {
+
+        const listItem = document.createElement('li');
+        listItem.textContent = items.value;
+
+        const btnDelete = document.createElement('button');
+        btnDelete.textContent = '❌';
+        btnDelete.setAttribute("aria-label", "Delete");
+
+        btnDelete.addEventListener('click', function () {
+            list.removeChild(listItem);
+            items.focus();
+        });
+
+        listItem.appendChild(btnDelete);
+        list.appendChild(listItem);
+
+        items.value = '';
+    }
+    items.focus();
+});
