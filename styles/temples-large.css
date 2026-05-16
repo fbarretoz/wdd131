@@ -1,0 +1,84 @@
+@media screen and (min-width: 450px) and (max-width: 719px) {
+    header span {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    header span {
+        font-size: 2rem;
+    }
+
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    #menu {
+        display: none;
+        color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #034748;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        background-color: #034748;
+        color: #fff;
+    }
+
+    .navigation li a {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+        text-decoration-color: #fff;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        grid-column: 1 / 4;
+        text-align: center;
+    }
+
+    figure img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid gray;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+}

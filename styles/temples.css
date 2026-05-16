@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    padding: 1rem;
+}
+
+header,
+footer {
+    background-color: #154250;
+    color: #fff;
+}
+
+header span {
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li a {
+    display: flex;
+    padding: .5rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+figcaption {
+    text-align: center;
+}
