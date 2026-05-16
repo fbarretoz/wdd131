@@ -88,6 +88,9 @@ h1 {
     padding: 1rem;
 }
 
+figure image {
+    width: 100%
+}
 
 figcaption {
     text-align: center;
