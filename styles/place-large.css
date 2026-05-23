@@ -44,7 +44,8 @@
         top: 10px;
         left: -10px;
         background-color: var(--heading-green);
-        color: #fff;
+        /* color: #fff; */
+        color: var(--card-bg);
         display: flex;
         align-items: center;
         font-size: 1.3rem;
