@@ -8,7 +8,6 @@
 
 :root {
     --color-primary: #1B3A2F;
-    /* --color-bg: #F8F6F1; */
     --color-bg: #ffffff;
     --heading-green: rgba(27, 58, 47, 0.8);
     --card-bg: rgba(255, 255, 255, 0.86);
@@ -21,7 +20,6 @@
 body {
     color: var(--text-dark);
     font-family: var(--font-main);
-    /* background-color: #ffffff; */
 }
 
 header,
@@ -54,7 +52,7 @@ picture img {
 }
 
 .cards {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
 }
 
 .card {
