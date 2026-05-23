@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Canaima National Park - Felix Barreto</title>
+    <meta name="description"
+        content="Discover one of the oldest places on the planet with fascinating landscapes, a return to nature in Venezuela.Elaborated with HTML, CSS, and JavaScript.">
+    <meta name="author" content="Felix Jose Barreto Zerpa">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Canaima National Park</h1>
+    </header>
+    <div class="green-line"></div>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/canaima-large.webp">
+                <img src="images/canaima-small.webp" alt="Canaima National Park">
+            </picture>
+        </div>
+
+        <div class="cards">
+            <section class="card data-card">
+                <h2>Data</h2>
+                <dl>
+                    <div>
+                        <dt>Country:</dt>
+                        <dd>Venezuela</dd>
+                    </div>
+                    <div>
+                        <dt>State:</dt>
+                        <dd>Bolívar</dd>
+                    </div>
+                    <div>
+                        <dt>Area:</dt>
+                        <dd>30,000 sq km</dd>
+                    </div>
+                    <div>
+                        <dt>Attraction:</dt>
+                        <dd>Angel Falls</dd>
+                    </div>
+                    <div>
+                        <dt>Languages:</dt>
+                        <dd>Spanish, Pemon</dd>
+                    </div>
+                    <div>
+                        <dt>Decreed:</dt>
+                        <dd>June 12, 1962</dd>
+                    </div>
+                    <div>
+                        <dt>Time Zone:</dt>
+                        <dd>UTC-4</dd>
+                    </div>
+                    <div>
+                        <dt>Guy:</dt>
+                        <dd>Natural</dd>
+                    </div>
+                </dl>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy weather icon" width="90"
+                    height="90">
+                <dl>
+                    <div>
+                        <dt>Temperature:</dt>
+                        <dd><span id="temperature"></span></dd>
+                    </div>
+                    <div>
+                        <dt>Conditions:</dt>
+                        <dd>Partly Cloudy</dd>
+                    </div>
+                    <div>
+                        <dt>Wind:</dt>
+                        <dd><span id="wind-speed"></span></dd>
+                    </div>
+                    <div>
+                        <dt>Wind Chill:</dt>
+                        <dd><span id="wind-chill"></span></dd>
+                    </div>
+                </dl>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🦜 Félix José Barreto Zerpa 🦜 Venezuela</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

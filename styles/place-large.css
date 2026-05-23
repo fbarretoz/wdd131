@@ -1,0 +1,107 @@
+@media screen and (min-width: 700px) {
+    /* header {
+        border-bottom-width: 20px;
+    } */
+
+    h1 {
+        padding: 1rem;
+    }
+
+    .hero {
+        position: relative;
+        min-height: 540px;
+        overflow: hidden;
+    }
+
+    picture img {
+        height: 540px;
+    }
+
+    .cards {
+        position: absolute;
+        inset: 0;
+        background-color: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+        position: absolute;
+        border: none;
+        background-color: var(--card-bg);
+        box-shadow: var(--shadow);
+        padding: 0 1rem 1.3rem;
+        width: 240px;
+    }
+
+    .data-card {
+        top: 110px;
+        left: 1.8rem;
+        /* width: 280px; */
+    }
+
+    .weather-card {
+        right: 2rem;
+        bottom: 10px;
+        /* width: 280px; */
+        padding-top: 50px;
+    }
+
+    .card h2 {
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        background-color: var(--heading-green);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+    }
+
+    .data-card h2 {
+        width: calc(100% - 2rem);
+        transform: translate(-1rem, 0.8rem);
+        padding: 1rem;
+        margin-left: 15px;
+    }
+
+    .weather-card h2 {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        width: auto;
+        width: calc(100% - 2rem);
+        padding: 0.6rem 0.9rem;
+        transform: translate(-0.2rem, 0.3rem);
+    }
+
+    .weather-card h2::after {
+        content: "⛅";
+        font-size: 1.55rem;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .data-card dl {
+        padding-top: 100px;
+    }
+
+    .weather-card dl {
+        padding-top: 1.6rem;
+    }
+
+    dl div {
+        max-width: none;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 0.55rem;
+        margin-bottom: 0.85rem;
+        font-size: .8rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madagascar</title>
+
+    <style>
+        :root {
+            --red: #d21034;
+            --green: #007849;
+            --green-card: #1b7345;
+            --text: #202020;
+            --white-card: rgba(255, 255, 255, 0.82);
+            --shadow-card: 0 0 14px rgba(0, 0, 0, 0.17);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background: var(--red);
+        }
+
+        .page {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-header {
+            height: 130px;
+            background: var(--red);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-header h1 {
+            font-size: clamp(2.7rem, 5vw, 4rem);
+            font-weight: 500;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        .green-line {
+            height: 20px;
+            background: var(--green);
+            flex: 0 0 auto;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 600px;
+            flex: 1;
+            overflow: hidden;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)),
+                url("assets/lemures-madagascar.jpg");
+            background-size: cover;
+            background-position: center 45%;
+        }
+
+        /* CARD GENERAL */
+        .info-card,
+        .weather-card {
+            position: absolute;
+            background: var(--white-card);
+            box-shadow: var(--shadow-card);
+            backdrop-filter: blur(1px);
+        }
+
+        .card-title {
+            position: absolute;
+            top: 11px;
+            left: -10px;
+            height: 74px;
+            background: var(--green-card);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding-left: 21px;
+            font-size: 1.85rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+
+        /* DATA CARD */
+        .info-card {
+            left: 21px;
+            top: 40px;
+            width: 320px;
+            height: 381px;
+        }
+
+        .info-card .card-title {
+            width: 287px;
+        }
+
+        .data-list {
+            list-style: none;
+            width: 100%;
+            padding: 108px 39px 0 43px;
+            font-size: 1.03rem;
+            line-height: 1.95;
+        }
+
+        .data-list li {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            column-gap: 10px;
+            white-space: nowrap;
+        }
+
+        .data-list strong {
+            text-align: right;
+            font-weight: 700;
+        }
+
+        .data-list span {
+            text-align: left;
+            font-weight: 400;
+        }
+
+        /* WEATHER CARD */
+        .weather-card {
+            right: 17px;
+            bottom: 38px;
+            width: 273px;
+            height: 285px;
+        }
+
+        .weather-card .card-title {
+            width: 235px;
+            height: 99px;
+            top: 12px;
+            left: -10px;
+            padding-left: 21px;
+            font-size: 1.85rem;
+            gap: 37px;
+        }
+
+        .weather-icon {
+            font-size: 1.8rem;
+            line-height: 1;
+            transform: translateY(-2px);
+        }
+
+        .weather-list {
+            list-style: none;
+            padding: 141px 31px 0 31px;
+            font-size: 1rem;
+            line-height: 2;
+            text-align: center;
+        }
+
+        .weather-list li {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            column-gap: 9px;
+            white-space: nowrap;
+        }
+
+        .weather-list strong {
+            text-align: right;
+            font-weight: 700;
+        }
+
+        .weather-list span {
+            text-align: left;
+            font-weight: 400;
+        }
+
+        .footer {
+            min-height: 147px;
+            background: var(--red);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.18rem;
+            line-height: 1.3;
+            font-weight: 700;
+            padding: 18px 16px;
+        }
+
+        .footer p {
+            margin-top: -8px;
+        }
+
+        .flower {
+            color: #ff71d9;
+            padding: 0 6px;
+        }
+
+        @media (max-width: 850px) {
+            .hero {
+                min-height: 720px;
+            }
+
+            .info-card {
+                left: 50%;
+                top: 30px;
+                transform: translateX(-50%);
+            }
+
+            .weather-card {
+                right: auto;
+                left: 50%;
+                bottom: 35px;
+                transform: translateX(-50%);
+            }
+        }
+
+        @media (max-width: 390px) {
+            .top-header {
+                height: 105px;
+            }
+
+            .info-card {
+                width: calc(100% - 34px);
+            }
+
+            .info-card .card-title {
+                width: calc(100% - 43px);
+            }
+
+            .data-list {
+                padding-left: 25px;
+                padding-right: 25px;
+                font-size: 0.94rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <header class="top-header">
+            <h1>Madagascar</h1>
+        </header>
+
+        <div class="green-line"></div>
+
+        <section class="hero" aria-label="Lémures de Madagascar">
+            <article class="info-card">
+                <div class="card-title">Data</div>
+
+                <ul class="data-list">
+                    <li><strong>Area:</strong><span>587,041 sq km</span></li>
+                    <li><strong>Population:</strong><span>27,691,018</span></li>
+                    <li><strong>Capital:</strong><span>Antananarivo</span></li>
+                    <li><strong>Languages:</strong><span>Malagasy, French</span></li>
+                    <li><strong>Currency:</strong><span>Malagasy Ariary</span></li>
+                    <li><strong>Time Zone:</strong><span>UTC+3</span></li>
+                    <li><strong>Calling Code:</strong><span>+261</span></li>
+                    <li><strong>Internet TLD:</strong><span>.mg</span></li>
+                </ul>
+            </article>
+
+            <article class="weather-card">
+                <div class="card-title">
+                    <span>Weather</span>
+                    <span class="weather-icon" aria-hidden="true">🌥️</span>
+                </div>
+
+                <ul class="weather-list">
+                    <li><strong>Temperature:</strong><span>10 °C</span></li>
+                    <li><strong>Conditions:</strong><span>Partly Cloudy</span></li>
+                    <li><strong>Wind:</strong><span>5 km/h</span></li>
+                    <li><strong>Wind Chill:</strong><span>9.8 °C</span></li>
+                </ul>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p>
+                ©2024 <span class="flower">🌺</span> Rubia Magdelena Francesco
+                <span class="flower">🌺</span> Madagascar<br />
+                Last Modification: 02/08/2024 22:47:47
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
