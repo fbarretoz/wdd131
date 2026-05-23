@@ -1,8 +1,4 @@
 @media screen and (min-width: 700px) {
-    /* header {
-        border-bottom-width: 20px;
-    } */
-
     h1 {
         padding: 1rem;
     }
@@ -21,7 +17,6 @@
         position: absolute;
         inset: 0;
         background-color: transparent;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     }
 
     .card {
@@ -36,13 +31,11 @@
     .data-card {
         top: 110px;
         left: 1.8rem;
-        /* width: 280px; */
     }
 
     .weather-card {
         right: 2rem;
         bottom: 10px;
-        /* width: 280px; */
         padding-top: 50px;
     }
 

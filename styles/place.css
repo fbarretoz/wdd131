@@ -1,5 +1,4 @@
 * {
-    /* box-sizing: border-box; */
     margin: 0;
     padding: 0;
 }
@@ -9,12 +8,11 @@
 :root {
     --color-primary: #1B3A2F;
     --color-bg: #F8F6F1;
-    /* --heading-green: rgba(0, 126, 58, 0.8);*/
     --heading-green: rgba(27, 58, 47, 0.8);
     --card-bg: rgba(255, 255, 255, 0.86);
     --border-light: #eeeeee;
     --max-width: 1160px;
-    --shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+    --shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     --font-main: Arial, Helvetica, sans-serif;
 }
 
@@ -44,7 +42,6 @@ h1 {
 
 .hero {
     width: 100%;
-    /* background-color: #ffffff; */
 }
 
 picture,
@@ -99,6 +96,5 @@ dd {
 
 .weather-icon {
     display: block;
-    /* margin: -0.4rem auto 2rem; */
     margin: auto;
 }
