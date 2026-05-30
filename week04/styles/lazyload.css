@@ -1,0 +1,32 @@
+main {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+footer {
+    text-align: center;
+}
