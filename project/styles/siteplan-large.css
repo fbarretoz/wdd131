@@ -1,0 +1,104 @@
+@media screen and (min-width: 750px) {
+
+    /*=== HEADER ===*/
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    nav {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigation li a {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: auto;
+    }
+
+    .site-logo {
+        height: 80px;
+        width: auto;
+        display: block;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        transition: transform 0.3s ease;
+
+    }
+
+    .logo-link {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .logo-link:hover .site-logo {
+        transform: scale(1.05);
+    }
+
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: var(--white);
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+    /*=== MAIN CONTENT ===*/
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+
+}
