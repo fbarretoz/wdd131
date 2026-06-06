@@ -125,6 +125,27 @@ main {
     color: var(--text-color);
 }
 
+/* CHECKBOX*/
+.checkbox-group {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    /* margin-bottom: 8px;
+    padding-top: 0; */
+}
+
+.checkbox-group label {
+    /* display: inline; */
+    font-weight: 400;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.wf1 div.checkbox-group {
+    padding-top: 0;
+}
+
+
 /* stars */
 .stars {
     display: flex;
@@ -135,6 +156,10 @@ main {
 
 .wf1 .stars {
     padding: 0 0 6px 6px;
+}
+
+div .star-option {
+    padding-top: 5px;
 }
 
 .star-option {
@@ -165,9 +190,6 @@ main {
     margin-top: 10px;
 }
 
-/* input[type="checkbox"] {
-    font-size: 12px;
-} */
 
 
 /*=== FOOTER ===*/

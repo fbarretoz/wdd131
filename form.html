@@ -30,42 +30,51 @@
                 Overall Rating
             </div>
             <div class="stars">
-                <label for="rating1" class="star-option"></label>
-                <span class="star-display">&#x2606;</span>
-                <input type="radio" id="rating1" name="rating" value="1" required>
-
-                <label for="rating2" class="star-option"></label>
-                <span class="star-display">&#x2606;&#x2606;</span>
-                <input type="radio" id="rating2" name="rating" value="2" required>
-
-                <label for="rating3" class="star-option"></label>
-                <span class="star-display">&#x2606;&#x2606;&#x2606;</span>
-                <input type="radio" id="rating3" name="rating" value="3" required>
-
-                <label for="rating4" class="star-option"></label>
-                <span class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;</span>
-                <input type="radio" id="rating4" name="rating" value="4" required>
-
-                <label for="rating5" class="star-option"></label>
-                <span class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</span>
-                <input type="radio" id="rating5" name="rating" value="5" required>
+                <div class="star-option">
+                    <label for="rating1" class="star-option"><span class="star-display">&#x2606;</span></label>
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                </div>
+                <div class="star-option">
+                    <label for="rating2" class="star-option"><span class="star-display">&#x2606;&#x2606;</span></label>
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </div>
+                <div class="star-option">
+                    <label for="rating3" class="star-option"><span
+                            class="star-display">&#x2606;&#x2606;&#x2606;</span></label>
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </div>
+                <div class="star-option">
+                    <label for="rating4" class="star-option"><span
+                            class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;</span></label>
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </div>
+                <div class="star-option">
+                    <label for="rating5" class="star-option"><span
+                            class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</span></label>
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </div>
             </div>
 
             <label for="date" class="spaced">Date of Installation</label>
             <input type="date" name="date" id="date" required>
 
             <div>Useful Features</div>
-            <label for="desing">Desing</label>
-            <input type="checkbox" name="desing" id="desing" value="desing">
-
-            <label for="durability">Durability</label>
-            <input type="checkbox" name="durability" id="durability" value="durability">
-
-            <label for="easy">Easy of Use</label>
-            <input type="checkbox" name="easy" id="easy" value="easy">
-
-            <label for="perfomance">Perfomance</label>
-            <input type="checkbox" name="perfomance" id="perfomance" value="perfomance">
+            <div class="checkbox-group">
+                <input type="checkbox" name="desing" id="desing" value="desing">
+                <label for="desing">Desing</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="durability" id="durability" value="durability">
+                <label for="durability">Durability</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="easy" id="easy" value="easy">
+                <label for="easy">Easy of Use</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="perfomance" id="perfomance" value="perfomance">
+                <label for="perfomance">Perfomance</label>
+            </div>
 
             <label for="review" class="spaced">Written Review <span>(Optional)</span></label>
             <textarea id="review" name="review" rows="4" cols="50"></textarea>
