@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Felix Barreto</title>
+    <meta name="description" content="Website Planning Document - Venezuela Land of Grace">
+    <meta name="author" content="Felix Jose Barreto Zerpa">
+
+    <link rel="stylesheet" href="styles/form/form.css">
+    <link rel="stylesheet" href="styles/form/form-large.css">
+
+    <script src="scripts/form/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <label>Product Name
+                <select name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+
+            <!-- <div>Overall Rating</div> -->
+            <div class="field-label">
+                Overall Rating
+            </div>
+            <!-- <div class="stars">
+                <label><input type="radio" id="ratingone" name="rating" value="1" required>&#x2606;</label>
+                <label><input type="radio" id="rating2" name="rating" value="2" required>&#x2606;&#x2606;</label>
+                <label><input type="radio" id="rating3" name="rating" value="3"
+                        required>&#x2606;&#x2606;&#x2606;</label>
+                <label><input type="radio" id="rating4" name="rating" value="4"
+                        required>&#x2606;&#x2606;&#x2606;&#x2606;</label>
+                <label><input type="radio" id="rating5" name="rating" value="5"
+                        required>&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</label>
+
+            </div> -->
+            <div class="stars">
+                <label class="star-option">
+                    <span class="star-display">&#x2606;</span>
+                    <input type="radio" id="ratingone" name="rating" value="1" required>
+                </label>
+
+                <label class="star-option">
+                    <span class="star-display">&#x2606;&#x2606;</span>
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </label>
+
+                <label class="star-option">
+                    <span class="star-display">&#x2606;&#x2606;&#x2606;</span>
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </label>
+
+                <label class="star-option">
+                    <span class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;</span>
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </label>
+
+                <label class="star-option">
+                    <span class="star-display">&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</span>
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </label>
+            </div>
+
+            <label class="spaced">Date of Installation<input type="date" name="date" id="date" required></label>
+
+            <div>Useful Features</div>
+            <label><input type="checkbox" name="durability" id="durability" value="durability">Durability</label>
+            <label><input type="checkbox" name="easy" id="easy" value="easy">Easy of Use</label>
+            <label><input type="checkbox" name="perfomance" id="perfomance" value="perfomance">Perfomance</label>
+            <label><input type="checkbox" name="desing" id="desing" value="desing">Desing</label>
+
+
+            <label class="spaced">Written Review <span>(Optional)</span><textarea id="review" name="review" rows="4"
+                    cols="50"></textarea></label>
+
+            <label class="spaced">Your Name <span>(Optional)</span><input type="text" name="name" id="name"></label>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏷️ Félix José Barreto Zerpa 🏷️ Venezuela</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
