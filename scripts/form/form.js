@@ -8,6 +8,9 @@ document.querySelector("#currentyear").innerHTML = year;
 
 document.querySelector("#lastModified").innerHTML = document.lastModified;
 
+//Add products to select element
+const productSelect = document.querySelector("#product-name");
+
 const products = [
     {
         id: "fc-1888",
@@ -36,17 +39,15 @@ const products = [
     }
 ];
 
-const productSelect = document.querySelector("#product-name");
-
 products.forEach(product => {
     const option = document.createElement("option");
-    option.value = product.name;
+    option.value = product.id;
     /* option.textContent = product.name; */
-    option.textContent = capitalizarPalabras(product.name);
+    option.textContent = capitalizeWords(product.name);
     productSelect.appendChild(option);
 });
 
-function capitalizarPalabras(texto) {
+function capitalizeWords(texto) {
     return texto.toLowerCase().split(' ').map(palabra => {
         return palabra.charAt(0).toUpperCase() + palabra.slice(1);
     }).join(' ');

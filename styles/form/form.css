@@ -12,7 +12,7 @@ html {
     --shadow: rgba(27, 58, 47, 0.1);
 }
 
-/*----------- apply a natural box layout model to all elements --------------*/
+/*=== apply a natural box layout model to all elements ===*/
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -20,7 +20,7 @@ html {
 }
 
 
-/*----------- BODY --------------*/
+/*=== BODY ===*/
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
@@ -30,7 +30,7 @@ body {
 }
 
 
-/*----------- HEADER --------------*/
+/*=== HEADER ===*/
 header {
     padding: .5rem;
     background-color: #ddd;
@@ -52,7 +52,7 @@ main {
     border-radius: 6px;
 }
 
-/*----------- FORM STYLING --------------*/
+/*=== FORM STYLING ===*/
 .wf1 fieldset {
     margin: 2rem 0;
     border: solid 1px #ddd;
@@ -129,9 +129,12 @@ main {
 .stars {
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content: left;
     gap: 20px;
-    padding: 10px 0;
+}
+
+.wf1 .stars {
+    padding: 0 0 6px 6px;
 }
 
 .star-option {
@@ -158,7 +161,7 @@ main {
 }
 
 
-/*----------- FOOTER --------------*/
+/*=== FOOTER ===*/
 footer {
     background-color: var(--primary-color);
     color: var(--white);
