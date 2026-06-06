@@ -95,7 +95,6 @@ main {
     max-width: 400px;
 }
 
-/* .wf1 input[type="radio"], */
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
 }
@@ -117,10 +116,6 @@ main {
     border-bottom: solid 8px red;
 }
 
-/* .wf1 .stars>label {
-    border-bottom: solid 8px red;
-} */
-
 .wf1 input:required:valid,
 .wf1 select:valid {
     border-bottom: solid 8px green;
@@ -134,7 +129,7 @@ main {
 .stars {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:left;
     gap: 20px;
     padding: 10px 0;
 }
@@ -147,8 +142,10 @@ main {
 }
 
 .star-display {
-    font-size: 1rem;
+    font-size: .75rem;
     color: var(--text-color);
+    display: block;
+    transition: 1s;
 }
 
 .star-option {

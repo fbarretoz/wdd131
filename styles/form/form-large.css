@@ -8,4 +8,10 @@
         font-size: .9rem;
         transition: 1s;
     }
+
+    .star-display {
+        font-size: 1rem;
+        color: var(--text-color);
+        transition: 1s;
+    }
 }
