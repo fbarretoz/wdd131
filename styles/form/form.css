@@ -33,7 +33,6 @@ body {
 /*=== HEADER ===*/
 header {
     padding: .5rem;
-    background-color: #ddd;
     margin: 0 0 1rem 0;
     background-color: var(--primary-color);
 }
@@ -96,7 +95,9 @@ main {
 }
 
 .wf1 input[type="checkbox"] {
+    transform: scale(1.6);
     margin-right: 6px;
+    margin-top: 10px;
 }
 
 .wf1 input[type="submit"] {
@@ -158,7 +159,7 @@ main {
     padding: 0 0 6px 6px;
 }
 
-div .star-option {
+div.star-option {
     padding-top: 5px;
 }
 
@@ -176,21 +177,12 @@ div .star-option {
     transition: 1s;
 }
 
-.star-option {
-    text-align: center;
-}
+
 
 .star-option input[type="radio"] {
     margin: 0;
     transform: scale(1.6);
 }
-
-.wf1 input[type="checkbox"] {
-    transform: scale(1.6);
-    margin-top: 10px;
-}
-
-
 
 /*=== FOOTER ===*/
 footer {
