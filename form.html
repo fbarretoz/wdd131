@@ -21,21 +21,23 @@
 
     <main>
         <form method="get" action="review.html" class="wf1">
-            <label>Product Name
-                <select name="product-name" id="product-name" required>
-                    <option value="" disabled selected>Select a Product ...</option>
-                </select>
-            </label>
+            <label for="product-name">Product Name</label>
+            <!-- <label>Product Name -->
+            <select name="product-name" id="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <!-- </label> -->
 
             <!-- <div>Overall Rating</div> -->
             <div class="field-label">
                 Overall Rating
             </div>
             <div class="stars">
-                <label class="star-option">
-                    <span class="star-display">&#x2606;</span>
-                    <input type="radio" id="rating1" name="rating" value="1" required>
-                </label>
+                <label for="rating1" class="star-option"></label>
+                <!-- <label class="star-option"> -->
+                <span class="star-display">&#x2606;</span>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                <!-- </label> -->
 
                 <label class="star-option">
                     <span class="star-display">&#x2606;&#x2606;</span>
