@@ -1,0 +1,112 @@
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.origin-section {
+    font-family: var(--montserrat-font);
+    margin-top: 1.5rem;
+}
+
+.mission-section {
+    margin: 2rem 0;
+    padding: 2rem 1rem 3rem;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-family: var(--playfair-font);
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mission-card {
+    background-color: var(--bg-color);
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--secondary-color);
+    /* Detalle dorado superior */
+    box-shadow: 0 4px 6px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+
+.mission-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.mission-card h3 {
+    font-family: var(--montserrat-font);
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.mission-card p {
+    font-family: var(--open-sans-font);
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.scope-section {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+}
+
+.scope-content {
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+.scope-section img {
+    border: solid 3px var(--secondary-color);
+    border-radius: 100%;
+}
+
+@media screen and (min-width: 641px) {
+    .origin-section {
+        padding: 2rem;
+    }
+
+    .mission-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .mission-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    /* .scope-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    } */
+
+    .scope-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+}

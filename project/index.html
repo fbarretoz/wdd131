@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venezuela, Land of Grace</title>
+    <meta name="description" content="Venezuela Land of Grace. Landscapes, tourist destinations, natural beauties.">
+    <meta name="author" content="Felix Jose Barreto Zerpa">
+
+
+
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <!-- =================
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&family=Montserrat:wght@500;600&display=swap"
+        rel="stylesheet">
+
+============= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#" class="logo-link">
+                <!-- <img src="images/logo.webp" alt="Venezuela Land of Grace Logo" class="site-logo" loading="lazy"> -->
+                <img src="images/logo.svg" alt="Logo" width="96" height="70" loading="lazy">
+            </a>
+        </div>
+        <button id="menu" title="Toggle Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a class="active" href="#index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Venezuela, Land of Grace</h1>
+        <div class="hero">
+            <div class="welcome">
+
+                <p>Welcome to Venezuela! Explore our unmatched ecological diversity, from ancient rainforests to
+                    pristine Caribbean shores.</p>
+            </div>
+            <picture class="images">
+                <source media="(min-width: 641px)" srcset="images/canaima-large.webp" width="696" height="353">
+                <img src="images/canaima-small-600w.webp" width="342" height="173" alt="Canaima National Park"
+                    loading="lazy">
+            </picture>
+        </div>
+
+        <!-- DESRTINATIOS CARDS -->
+        <section class="destinations">
+
+            <div class="container-grid">
+                <div class="cards">
+                    <picture>
+                        <img src="images/angel_falls_640x250.webp" width="339" height="134" alt="Angel Falls"
+                            loading="lazy">
+                    </picture>
+                    <h2 class="title">Angel Falls</h2>
+                    <p>Angel Falls is the world's tallest uninterrupted waterfall, located in Canaima National Park. Its
+                        majestic drop and lush
+                        jungle surroundings offer an unforgettable, breathtaking adventure for nature lovers.
+                    </p>
+                    <button class="wf-button" id="btn-fall">Learn More →</button>
+                </div>
+                <div class="cards">
+                    <picture>
+                        <img src="images/los_roques_640x250_2.webp" width="339" height="134"
+                            alt="Los Roques Archipelago" loading="lazy">
+                    </picture>
+                    <h2 class="title">Los Roques Archipelago</h2>
+                    <p>Los Roques is a pristine Caribbean archipelago with crystal-clear turquoise waters and vibrant
+                        coral reefs. It is an
+                        idyllic paradise perfect for snorkeling, sailing, and ultimate relaxation on white-sand beaches.
+                    </p>
+                    <button class="wf-button" id="btn-roque">Learn More →</button>
+                </div>
+                <div class="cards">
+                    <picture>
+                        <img src="images/coro_dunes_640x250.webp" width="339" height="134" alt="The Coro Dunes"
+                            loading="lazy">
+                    </picture>
+                    <h2 class="title">The Coro Dunes</h2>
+                    <p>Los Médanos de Coro features stunning, massive golden sand dunes right next to the city. It is a
+                        unique, mesmerizing
+                        landscape ideal for sandboarding, ATV rides, and spectacular sunset photography.
+                    </p>
+                    <button class="wf-button" id="btn-coro">Learn More →</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="curiositis" id="seccionCuriositis">
+
+        </section>
+
+    </main>
+
+    <footer class="wf-footer-desktop">
+        <div class="wf-footer-col">
+            <div class="wf-h3">Quick Links</div>
+            <div class="wf-link"><a href="destinations.html">Destinations</a></div>
+            <div class="wf-link"><a href="about.html">About</a></div>
+            <div class="wf-link"><a href="contact.html">Contact</a></div>
+        </div>
+        <div class="wf-footer-col">
+            <p><span class="wf-h3">Number of Visits</span></p>
+            <div><span class="visits"></span></div>
+        </div>
+        <div class="wf-footer-col">
+            <div class="wf-h3">Follow Us</div>
+            <div class="wf-social"><a href="https://www.linkedin.com/in/fbarretoz">LinkedIn</a></div>
+            <div class="wf-social"><a href="https://www.facebook.com/share/1AvjRwt7qx/">Facebook</a></div>
+            <div class="wf-social"><a href="https://www.instagram.com/fbarretoz?igsh=NHAwa3B4MXFzYWNu">Instagram</a>
+            </div>
+        </div>
+        <div class="wf-footer-bottom">
+            <p>&copy;<span id="currentyear"></span> 🦜 Félix José Barreto Zerpa 🦜 Venezuela</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

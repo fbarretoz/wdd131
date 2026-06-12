@@ -1,0 +1,143 @@
+.hero {
+    width: 100%;
+    font-family: var(--playfair-font);
+    color: var(--text-color);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    border: solid 5px var(--secondary-color);
+    /* box-shadow: 0 4px 6px var(--shadow); */
+    margin: 1rem 0;
+    place-items: center;
+    font-style: italic;
+
+}
+
+h1 {
+    font-family: var(--playfair-font);
+    font-size: 1.75em;
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--white);
+    /* padding: 1rem; */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow);
+    /* margin: 1rem 0; */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.hero img {
+    box-shadow: 0 0 6px 2px var(--shadow);
+}
+
+/*DESTINATIONS CARDS*/
+.cards {
+    width: 100%;
+    font-family: var(--playfair-font);
+    color: var(--text-color);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    border: dotted 3px var(--text-color);
+    /* box-shadow: 0 4px 6px var(--shadow); */
+    margin: 1rem 0;
+}
+
+.destinations img {
+    border: solid 1px var(--text-color);
+}
+
+.destinations .cards h2 {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.destinations .cards .title {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.destinations .cards p {
+    font-size: .85rem;
+}
+
+
+/*CURIOSITIS*/
+.curiositis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.curiositis .box-curiositis {
+    flex: 1 1 150px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.curiositis .box-curiositis p {
+    color: var(--white);
+}
+
+
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+@media screen and (min-width: 641px) {
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+    }
+
+
+    .images {
+        grid-column: 2 / 4;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        text-align: left;
+        padding-bottom: 1rem;
+    }
+
+
+    /*DESTINATIONS CARDS*/
+    .destinations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5rem;
+    }
+
+}

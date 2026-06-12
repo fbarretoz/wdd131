@@ -1,0 +1,120 @@
+.content-section {
+    width: 100%;
+    font-family: var(--playfair-font);
+    color: var(--text-color);
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: solid 6px var(--secondary-color);
+    /* border-top: solid 8px var(--secondary-color);
+    border-bottom: solid 8px var(--secondary-color); */
+    /* box-shadow: 0 4px 6px var(--shadow); */
+    margin: 1rem 0;
+    /*  place-items: center; */
+    font-style: italic;
+    scroll-margin-top: 100px;
+}
+
+
+
+picture img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.content-section .information ul {
+    /* padding-top: 1rem;
+    padding-left: 1rem; */
+    padding: 1rem 0 0 1rem;
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+}
+
+
+
+/*DESTINATIONS CARDS*/
+.card-activity {
+    width: 100%;
+    font-family: var(--playfair-font);
+    color: var(--text-color);
+    background-color: var(--white);
+    /* padding: 10px; */
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 6px var(--shadow);
+    margin: 1rem 0;
+}
+
+.card-activity figure img {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 641px) {
+
+    .content-section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+        place-items: center;
+    }
+
+    .content-section .title-section {
+        grid-column: 1 / 7;
+    }
+
+    #angel-falls .images {
+        grid-column: 1 / 4;
+    }
+
+
+    #angel-falls .information {
+        grid-column: 4 / 7;
+    }
+
+    #los-roques .information {
+        grid-column: 1 / 4;
+    }
+
+    #los-roques .images {
+        grid-column: 4 / 7;
+    }
+
+    #coro-dunes .images {
+        grid-column: 1 / 4;
+    }
+
+
+    #coro-dunes .information {
+        grid-column: 4 / 7;
+    }
+
+
+
+    .content-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .images-caption {
+        padding-left: 6px;
+        font-family: var(--montserrat-font);
+        font-size: .8rem;
+    }
+
+    .content-section .card1 {
+        grid-column: 1 / 3;
+    }
+
+    .content-section .card2 {
+        grid-column: 3 / 5;
+    }
+
+    .content-section .card3 {
+        grid-column: 5 / 7;
+    }
+
+}

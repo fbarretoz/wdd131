@@ -1,0 +1,369 @@
+/*=== SETTING ===*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1B3A2F;
+    --secondary-color: #D4AF37;
+    --bg-color: #F5F5DC;
+    --text-color: #2C2C2C;
+    --white: #FFFFFF;
+    --shadow: rgba(27, 58, 47, 0.5);
+    --playfair-font: 'Playfair Display', serif;
+    --open-sans-font: 'Open Sans', sans-serif;
+    --montserrat-font: 'Montserrat', sans-serif;
+}
+
+body {
+    max-width: 640px;
+    font-family: var(--open-sans-font);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+header span {
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*=== HEADER ===*/
+.logo-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.site-logo {
+    height: 70px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-link img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+
+}
+
+.logo-link:hover .site-logo {
+    transform: scale(1.05);
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--white);
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li a {
+    display: flex;
+    padding: .5rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: var(--white);
+    transform: scale(1.1);
+}
+
+.navigation a.active {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*=== DROPDOWN MENU ===*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* background-color: #D4AF37; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    border-radius: 6px;
+}
+
+.dropdown-content li a {
+    display: block;
+    text-align: left;
+    font-size: .9rem;
+    padding: 6px 16px;
+}
+
+.dropdown-content li a:hover {
+    background-color: var(--white);
+    color: var(--text-color);
+    /* text-decoration: underline; */
+    text-underline-offset: 8px;
+    text-decoration-color: var(--primary-color);
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*=== MAIN CONTENT ===*/
+main {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+.central-title {
+    font-family: var(--playfair-font);
+    color: var(--text-color);
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--shadow);
+}
+
+.central-title h1 {
+    font-size: 1.5em;
+}
+
+.central-title p {
+    font-size: 1rem;
+}
+
+
+/*=== FOOTER ===*/
+
+.wf-footer-col {
+    border-right: 1px solid var(--secondary-color);
+    padding-right: 1rem;
+}
+
+
+.wf-footer-desktop {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+
+.wf-footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 1rem;
+    /* padding-top: 1rem; */
+    border-top: 1px solid var(--secondary-color);
+}
+
+.wf-h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    /* margin-bottom: 0.75rem; */
+    color: var(--white);
+}
+
+.wf-link a {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 0.85rem;
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visits {
+    font-size: 2rem;
+}
+
+.wf-social a {
+    /* margin: 0.5rem 0; */
+    font-style: italic;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .85rem;
+}
+
+button.wf-button {
+    display: inline-block;
+    /* background-color: white; */
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 641px) {
+
+    body {
+        max-width: 1400px;
+        font-family: var(--open-sans-font);
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    /*=== HEADER ===*/
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    nav {
+        display: flex;
+        padding: 1rem;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigation li a {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: auto;
+    }
+
+    .site-logo {
+        height: 80px;
+        width: auto;
+        display: block;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        transition: transform 0.3s ease;
+
+    }
+
+    .logo-link {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .logo-link:hover .site-logo {
+        transform: scale(1.05);
+    }
+
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: var(--white);
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        font-family: 'Montserrat', sans-serif;
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+}
